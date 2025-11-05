@@ -17,17 +17,37 @@ A Go tool for discovering subdomains from Certificate Transparency (CT) logs usi
 
 ## Installation
 
-Make sure you have Go installed, then:
+### Install using go install (Recommended)
+
+Install directly from GitHub:
+
+```bash
+go install github.com/hackruler/rootf@latest
+```
+
+### Install from source
+
+Clone the repository and build:
+
+```bash
+git clone https://github.com/hackruler/rootf.git
+cd rootf
+go build -o rootf rootf.go
+```
+
+Or build directly:
 
 ```bash
 go build -o rootf rootf.go
 ```
 
-Or run directly:
+### Run directly without building
 
 ```bash
 go run rootf.go [options]
 ```
+
+**Note:** Make sure you have Go 1.16 or higher installed for `go install` to work properly.
 
 ## Usage
 
